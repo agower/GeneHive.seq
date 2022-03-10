@@ -1,0 +1,34 @@
+{
+  "name": "IlluminaSeqReads",
+  "description": "Container for a set of sequencing reads (e.g., pair of FASTQ files, or a uBAM file) produced by an Illumina run",
+  "variables": {
+    "runs": {
+      "name": "IlluminaSeqRun(s) from which the reads were obtained",
+      "category": "key",
+      "type": "E",
+      "entity_class_name": "IlluminaSeqRun",
+      "is_array": true
+    },
+    "lanes": {
+      "name": "Lanes of the flow cell that were utilized",
+      "category": "key",
+      "type": "I",
+      "is_array": true
+    },
+    "library": {
+      "name": "SeqLibrary that was sequenced",
+      "category": "key",
+      "type": "E",
+      "entity_class_name": "SeqLibrary"
+    },
+    "FASTQ": {
+      "name": "FASTQ WorkFile(s) containing the reads",
+      "type": "W",
+      "is_array": true
+    },
+    "uBAM": {
+      "name": "uBAM WorkFile containing the reads",
+      "type": "W"
+    }
+  }
+}
