@@ -22,14 +22,14 @@
         {"whole exome": ""}
       ]
     },
+    "date": {
+      "name": "Date on which the library was prepared",
+      "type": "D"
+    },
     "barcodes": {
       "name": "Sequence(s) of any barcode(s) used to demultiplex these reads",
       "type": "T",
       "is_array": true
-    },
-    "date": {
-      "name": "Date on which the library was prepared",
-      "type": "D"
     }
   }
 }
