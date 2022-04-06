@@ -14,18 +14,15 @@
     },
     "flowcell": {
       "name": "Identifier of the flow cell used to perform the run",
-      "category": "key",
       "type": "T"
     },
     "lanes": {
       "name": "Lane(s) of the flow cell that were utilized",
-      "category": "key",
       "type": "I",
       "is_array": true
     },
     "barcodes": {
       "name": "Sequence(s) of any barcode(s) used to demultiplex these reads",
-      "category": "key",
       "type": "T",
       "is_array": true
     }
