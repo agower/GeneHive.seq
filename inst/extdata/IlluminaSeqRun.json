@@ -2,6 +2,14 @@
   "name": "IlluminaSeqRun",
   "description": "Description of an Illumina sequencing run",
   "variables": {
+    "name": {
+      "name": "Name of the sequencing run, usually 'yymmdd_instrument_number_flowcell'",
+      "type": "T"
+    },
+    "date": {
+      "name": "Date on which the run was performed",
+      "type": "D"
+    },
     "instrument": {
       "name": "Instrument that performed the run",
       "type": "E",
@@ -15,13 +23,14 @@
       "name": "Identifier of the flow cell used to perform the run",
       "type": "T"
     },
-    "date": {
-      "name": "Date on which the run was performed",
-      "type": "D"
-    },
     "bases": {
       "name": "Number of bases that the run generated for each read",
       "type": "I",
+      "is_array": true
+    },
+    "comments": {
+      "name": "Comments about the quality, etc., of the run",
+      "type": "T",
       "is_array": true
     }
   }
