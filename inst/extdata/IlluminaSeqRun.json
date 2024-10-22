@@ -19,6 +19,14 @@
       "name": "Number of the sequencing run on the instrument (i.e., run #1, #2, #3, etc., since it was placed in service)",
       "type": "I"
     },
+    "position": {
+      "name": "Position of the flowcell (in an instrument that can process more than one flowcell in parallel",
+      "type": "C",
+      "codes": [
+        {"A": ""},
+        {"B": ""}
+      ]
+    },
     "flowcell": {
       "name": "Identifier of the flow cell used to perform the run",
       "type": "T"
